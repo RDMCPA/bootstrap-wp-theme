@@ -1,0 +1,11 @@
+{
+	"name": "johdesign/bootstrap-theme",
+	"type": "wordpress-theme",
+	"require": {
+	},
+	"autoload": {
+		"psr-0": {
+			"Joh": "inc/"
+		}
+	}
+}

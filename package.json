@@ -1,0 +1,10 @@
+{
+  "name": "bootstrap-theme",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-bowercopy": "~0.7.1"
+  }
+}

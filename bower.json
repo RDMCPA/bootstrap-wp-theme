@@ -1,0 +1,7 @@
+{
+  "name": "bootstrap-theme",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap-sass": "latest"
+  }
+}
