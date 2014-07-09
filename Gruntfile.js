@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'assets/styles/css/bootstrap.css': 'assets/styles/scss/bootstrap/bootstrap.scss',
-					'assets/styles/css/custom.css': 'assets/styles/scss/custom.scss'
+					'assets/styles/css/main.css': 'assets/styles/scss/main.scss'
 				}
 			}
 		},

@@ -1,0 +1,41 @@
+# Bower
+bower_components/
+
+# Composer
+composer.lock
+composer.phar
+vendor/
+
+
+# NPM
+node_modules/
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Sass
+scss/*
+!scss/mains.scss
+.sass-cache/
+
+# Sublime
+*.sublime-workspace
+# *.sublime-project
+
+# WordPress
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
