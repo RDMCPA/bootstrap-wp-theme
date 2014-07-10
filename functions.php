@@ -1,7 +1,7 @@
 <?php
 
 // Instantiate Theme Class
-$theme = new WordPress\Theme('boostrap');
+$theme = new WordPress\Theme('bootstrap');
 
 // Theme Setup
 $setup = array(
@@ -94,4 +94,4 @@ $theme->addWidgets($widgets);
 // Custom Header
 //require_once( get_template_directory() . '/lib/custom-header.php' );
 // Template Tags
-//require_once( get_template_directory() . '/lib/template-tags.php' );
+require_once( get_template_directory() . '/lib/template-tags.php' );
