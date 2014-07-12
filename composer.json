@@ -1,8 +1,17 @@
 {
-	"name": "johdesign/bootstrap-theme",
-	"type": "wordpress-theme",
-	"require": {
-	},
+	"name":	"johdesign/bootstrap-theme",
+	"description":	"A WordPress theme created with Twitter Bootstrap",
+	"type":	"wordpress-theme",
+	"homepage":	"https://github.com/johdesign/bootstrap-wp-theme",
+	"license":	"GPL-2.0",
+	"authors":	[
+		{
+			"name":	"Frank McCoy",
+			"email":	"frankmccoy.d@gmail.com",
+			"homepage":	"https://github.com/fmccoy",
+			"role":	"developer"
+		}
+	],
 	"autoload": {
 		"psr-0": {
 			"Joh": "inc/"
