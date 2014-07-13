@@ -1,4 +1,14 @@
 <?php
+// Check for Composer support.
+if( WP_COMPOSER != true )	{
+
+	if( file_exists('vendor/autoload.php') ) {
+		require_once 'vendor/autoload.php';
+	} else {
+		echo "Cannot Find Classes, please run composer.";
+		exit;
+	}
+}
 
 // Instantiate Theme Class
 $theme = new WordPress\Theme('bootstrap');
