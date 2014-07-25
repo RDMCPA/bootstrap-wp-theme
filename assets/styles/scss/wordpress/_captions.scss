@@ -1,0 +1,47 @@
+//++++++++++++++++++++++++++++++++++++++++
+//++    Captions
+//++++++++++++++++++++++++++++++++++++++++
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 98%; /* Image does not overflow the content area */
+    padding: 10px;
+    text-align: center;
+    clear: both;
+
+    &.alignnone {
+        margin: 5px 20px 20px 0;
+    }
+
+    &.alignleft {
+        margin: 5px 20px 20px 0;
+    }
+
+    &.alignright {
+        margin: 5px 0 20px 20px;
+    }
+
+    > img {
+        border: 0 none;
+        height: auto;
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+        width: auto;
+        float: left;
+    }
+
+    p.wp-caption-text {
+        font-size: 11px;
+        line-height: 17px;
+        margin: 0;
+        padding: 0 4px 5px;
+        float: left;
+        width: 100%;
+
+        &:first-of-type {
+        	margin-top: 10px; 
+        }
+    }
+}

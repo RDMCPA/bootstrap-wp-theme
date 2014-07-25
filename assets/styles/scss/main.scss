@@ -1,3 +1,17 @@
+@import "wordpress";
+
+$header-space: 60px;
+a.navbar-brand img {
+	width: auto;
+	max-height: $header-space;
+}
+#menu-primary .navbar-nav a {
+	line-height: $header-space;
+}
+.navbar-toggle {
+	margin-top: 30px;
+}
+
 body {
-	margin-top:60px;
+	margin-top:$header-space + 30px;
 }

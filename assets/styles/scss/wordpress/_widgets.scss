@@ -1,0 +1,87 @@
+.widget-area {
+
+	aside,
+	.widget {
+		width: 100%;
+
+		ul {
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+
+	.widget-title {
+
+	}
+
+	// Built In Widget Search
+	.widget_search {}
+
+	// Built In Recent Posts
+	.widget_recent_entries {}
+	
+	// Built In Recent Comments
+	.widget_recent_comments {
+		#recentcomments {
+			.recentcomments {}
+		}
+	}
+
+	// Built In Archive
+	.widget_archive {}
+	
+	// Built In Categories
+	.widget_categories {}
+	
+	// Built In Meta
+	.widget_meta {}
+
+	// Built In Tag Cloud
+	.widget_tag_cloud {
+		.tagcloud {}
+	}
+
+	// Built In Calendar
+	.widget_calendar {
+		#calendar_wrap {
+			#wp-calendar {
+				width: 100%;
+
+				caption {
+
+				}
+
+				thead th,
+				tbody td {
+					width: 14.28%;
+					padding: 2%;
+					text-align: center;
+				}
+
+			}
+		}
+	}
+
+	.widget_nav_menu {
+		.menu {
+			.menu-item {
+
+				&.menu-item-has-children {
+
+					.sub-menu {
+						display: none;
+						padding-left: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px)
+{
+	.widget-area {
+		width: 100%;
+	}
+} 

@@ -1,0 +1,46 @@
+#masthead {
+	@include col(24);
+}
+
+#primary-navigation {
+	@include col(24);
+}
+
+#content {
+	@include col(24);
+}
+
+#primary {
+	@include col(15);
+}
+
+#secondary {
+	@include col(8);
+	@include offset-col(1);
+}
+
+#footer-widgets {
+	@include col(24);
+
+	.widget {
+		@include col(7);
+		@include offset-col(1);
+	}
+	.widget:first-child {
+		margin: 0px;
+	}
+
+
+}
+#colophon {
+	@include col(24);
+}
+
+@media (max-width: 480px)
+{
+	#primary, 
+	#footer-widgets .widget,
+	#secondary {
+		@include col(24);
+	}
+}

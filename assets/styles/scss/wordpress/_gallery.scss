@@ -1,0 +1,31 @@
+.gallery {
+
+	dl,
+	dl.gallery-item {
+		margin: 0px;
+		padding: 0px;
+
+
+
+		dt,
+		dt.gallery-icon,
+		dt.gallery-icon.landscape {
+
+		}
+
+		dd,
+		dd.gallery-caption {
+
+		}
+	}
+
+	@for $i from 1 through 24 {
+	  &.gallery-columns-#{$i} {
+	  	.gallery-item {
+	  		@include col($i);
+	  	}
+	  }
+	}
+
+	
+}
