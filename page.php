@@ -2,7 +2,18 @@
 
 <?php if(have_posts() ) : ?>
 
-  <div class="col-sm-8">
+	<?php bt_child_page_menu();?>
+
+
+	<?php if( has_children( post_parent_id() ) == false) : ?>
+		
+		<div class="col-sm-6 col-sm-offset-2">
+	
+	<?php else : ?>
+
+  <div class="col-sm-6">
+
+  <?php endif; ?>
 
   <?php while( have_posts() ) : the_post(); ?>
 

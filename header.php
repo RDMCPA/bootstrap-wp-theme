@@ -34,10 +34,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
+          <?php if ( get_header_image() ) : ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand" rel="home">
+              <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+            </a>
+          <?php else : // End header image check. ?>
+          
           <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
             <?php bloginfo( 'name' ); ?>
           </a>
-           <?php bt_get_menu( 'primary' ); ?>
+
+          <?php endif; ?>
+
+          <?php bt_get_menu( 'primary' ); ?>
         </div>
       </div>
     </div>

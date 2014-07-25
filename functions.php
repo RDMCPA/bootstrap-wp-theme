@@ -102,6 +102,10 @@ $widgets = array(
 $theme->addWidgets($widgets);
 
 // Custom Header
-//require_once( get_template_directory() . '/lib/custom-header.php' );
+require_once( get_template_directory() . '/lib/custom-header.php' );
+
 // Template Tags
 require_once( get_template_directory() . '/lib/template-tags.php' );
+
+// Custom Post Types
+require_once( get_template_directory() . '/lib/custom-post-types.php');

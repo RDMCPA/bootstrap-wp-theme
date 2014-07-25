@@ -145,3 +145,70 @@ function bt_categorized_blog() {
 		return false;
 	}
 }
+
+
+function bt_child_page_menu()
+{
+	global $post;
+	if( $post->post_parent) {
+		
+		$parent_id = get_post_ancestors( $post->ID );
+		$id = end($parent_id);
+	} else {
+		$id = $post->ID;
+	}
+	if( has_children($id)) {
+		echo '<div class="col-sm-2">';
+		$args = array(
+			'authors'      => '',
+			'child_of'     => $id,
+			'date_format'  => get_option('date_format'),
+			'depth'        => 0,
+			'echo'         => 1,
+			'exclude'      => '',
+			'include'      => '',
+			'link_after'   => '',
+			'link_before'  => '',
+			'post_type'    => 'page',
+			'post_status'  => 'publish',
+			'show_date'    => '',
+			'sort_column'  => 'menu_order, post_title',
+		        'sort_order'   => '',
+			'title_li'     => '', 
+			'walker'       => ''
+		);
+		echo '<ul class="nav nav-pills nav-stacked">';
+		echo '<h3><a href="'. get_permalink($id). '">'.get_the_title($id).'</a></h3>';
+		wp_list_pages($args);
+		echo '</ul>';
+		echo '</div>';
+	}
+	
+}
+
+function post_parent_id()
+{
+	global $post;
+	if( $post->post_parent) {
+		
+		$parent_id = get_post_ancestors( $post->ID );
+		$id = end($parent_id);
+	} else {
+		$id = $post->ID;
+	}
+	return $id;
+}
+/*
+function is_tree($pid) {      // $pid = The ID of the page we're looking for pages underneath
+	global $post;         // load details about this page
+	if(is_page()&&($post->post_parent==$pid||is_page($pid))) 
+               return true;   // we're at the page or at a sub page
+	else 
+               return false;  // we're elsewhere
+};
+*/
+function has_children($post_id) {
+    $children = get_pages("child_of=$post_id");
+    if( count( $children ) != 0 ) { return true; } // Has Children
+    else { return false; } // No children
+}
